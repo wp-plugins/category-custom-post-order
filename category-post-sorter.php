@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Category Custom Post Order
-Version: 1.3.1
+Version: 1.3.2
 Plugin URI: http://potrebka.pl/
 Description: Order post as you want.
 Author: Piotr Potrebka
@@ -72,7 +72,6 @@ class category_custom_post_order {
 					'compare' => 'NOT EXISTS'
 				)
 			));
-			
         }
     }
 
@@ -96,7 +95,6 @@ class category_custom_post_order {
 	{
 		if( !isset( $term->term_id ) OR !isset( $term->taxonomy ) ) return $actions;
 		if( ( !empty( $term->taxonomy ) AND in_array( $term->taxonomy, $this->sortlink_in) ) OR in_array( 'all', $this->sortlink_in) ) {
-			
 			$actions['order_link'] = '<a href="'.admin_url('edit.php?page=sort-page&taxonomy='.$term->taxonomy.'&term_id='.$term->term_id).'">' . __('Order', 'cps') . '</a>';
 		}
 		return $actions;
