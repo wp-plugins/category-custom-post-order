@@ -1,5 +1,5 @@
-=== WP Super Cache ===
-Contributors: donncha, automattic
+=== Category Custom Post Order ===
+Contributors: potreb
 Tags: order posts, custom order posts, category posts order, custom order
 Tested up to: 3.9.2
 Stable tag: 1.3.2
