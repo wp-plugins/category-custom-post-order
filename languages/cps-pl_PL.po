@@ -1,0 +1,1908 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Dynamic Forms\n"
+"POT-Creation-Date: 2014-06-10 20:29+0100\n"
+"PO-Revision-Date: 2014-06-10 20:30+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;__;_e;esc_html_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../post-sorter.php:42 ../post-sorter.php:98
+msgid "Order posts"
+msgstr "Sortuj wpisy"
+
+#: ../post-sorter.php:51
+msgid "Order"
+msgstr "Sortuj"
+
+#: ../post-sorter.php:108
+msgid "Category:"
+msgstr "Kategorie:"
+
+#: ../post-sorter.php:122
+msgid "No posts"
+msgstr "Brak wpisów"
+
+#: ../post-sorter.php:126
+msgid "Reorder"
+msgstr "Posortuj"
+
+#: ../post-sorter.php:126
+msgid "Remove order"
+msgstr "Usuń sortowanie"
+
+#~ msgid "Text field"
+#~ msgstr "Pole tekstowe"
+
+#~ msgid "Description field"
+#~ msgstr "Pole opisowe"
+
+#~ msgid "Select field"
+#~ msgstr "Pole wyboru"
+
+#~ msgid "Checkbox field"
+#~ msgstr "Pole checkbox"
+
+#~ msgid "Radio field"
+#~ msgstr "Pole radio"
+
+#~ msgid "Date field"
+#~ msgstr "Data"
+
+#~ msgid "Password field"
+#~ msgstr "Pole z hasłem"
+
+#~ msgid "Hidden field"
+#~ msgstr "Ukryte pole"
+
+#~ msgid "Attachment field"
+#~ msgstr "Załącznik"
+
+#~ msgid "Section"
+#~ msgstr "Nagłówek"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "Persons"
+#~ msgstr "Osoby"
+
+#~ msgid "Trainings"
+#~ msgstr "Szkolenia"
+
+#~ msgid "Training"
+#~ msgstr "Szkolenie"
+
+#~ msgid "Add"
+#~ msgstr "Dodaj"
+
+#~ msgid "Add New Training"
+#~ msgstr "Dodaj Nowe  Szkolenie"
+
+#~ msgid "Edit Training"
+#~ msgstr "Edytuj Szkolenie"
+
+#~ msgid "New Training"
+#~ msgstr "Nowe Szkolenie"
+
+#~ msgid "All"
+#~ msgstr "Wszystkie"
+
+#~ msgid "View Training"
+#~ msgstr "Zobacz Szkolenie"
+
+#~ msgid "Search Training"
+#~ msgstr "Szukaj Szkolenia"
+
+#~ msgid "No forms found"
+#~ msgstr "Nie znaleziono formularzy"
+
+#~ msgid "No forms found in Trash"
+#~ msgstr "Nie znaleziono formularzy w koszu"
+
+#~ msgid "Search Category"
+#~ msgstr "Szukaj Kategoria"
+
+#~ msgid "Popular Category"
+#~ msgstr "Popularne Kategorie"
+
+#~ msgid "All Categories"
+#~ msgstr "Wszystkie kategorie"
+
+#~ msgid "Edit Category"
+#~ msgstr "Edytuj Kategorię"
+
+#~ msgid "Update Category"
+#~ msgstr "Aktualizacja Kategorię"
+
+#~ msgid "Add New Category"
+#~ msgstr "Dodaj Nową Kategorię"
+
+#~ msgid "New Category Name"
+#~ msgstr "Nowa kategoria"
+
+#~ msgid "Separate categories with commas"
+#~ msgstr "Oddziel kategorie przecinkami"
+
+#~ msgid "Add or remove categories"
+#~ msgstr "Dodaj albo usuń kategorie"
+
+#~ msgid "Choose from the most used categories"
+#~ msgstr "Wybierz z najczęściej stosowanych kategorii"
+
+#~ msgid "No categories found."
+#~ msgstr "Nie znaleziono kategorii"
+
+#~ msgid "Search"
+#~ msgstr "Szukaj"
+
+#~ msgid "Popular"
+#~ msgstr "Popularne"
+
+#~ msgid "Edit"
+#~ msgstr "Edytuj"
+
+#~ msgid "Update"
+#~ msgstr "Aktualizacja"
+
+#~ msgid "Add New"
+#~ msgstr "Dodaj nowy"
+
+#~ msgid "Separate city with commas"
+#~ msgstr "Oddziel miasta przecinkami"
+
+#~ msgid "Add or remove cities"
+#~ msgstr "Dodaj albo usuń miasta"
+
+#~ msgid "Choose from the most used cities"
+#~ msgstr "Wybierz z najczęściej stosowanych miast"
+
+#~ msgid "No cities found."
+#~ msgstr "Nie znaleziono miasta"
+
+#~ msgid "Cities"
+#~ msgstr "Miasta"
+
+#~ msgid "All coaches"
+#~ msgstr "Wszyscy trenerzy"
+
+#~ msgid "Add new coach"
+#~ msgstr "Dodaj trenera"
+
+#~ msgid "New Coches Name"
+#~ msgstr "Nazwa trenera"
+
+#~ msgid "Separate coaches with commas"
+#~ msgstr "Oddziel trenerow przecinkami"
+
+#~ msgid "Add or remove coaches"
+#~ msgstr "Dodaj albo usuń trenerów"
+
+#~ msgid "Choose from the most used coches"
+#~ msgstr "Wybierz z najczęściej wybieranych trenerów"
+
+#~ msgid "No coaches found."
+#~ msgstr "Nie znaleziono trenera"
+
+#~ msgid "Coaches"
+#~ msgstr "Trenerzy"
+
+#~ msgid "Label"
+#~ msgstr "Etykieta"
+
+#~ msgid "Value"
+#~ msgstr "Wartość"
+
+#~ msgid "Required"
+#~ msgstr "Wymagane"
+
+#~ msgid "Chars:"
+#~ msgstr "Znaków:"
+
+#~ msgid "The error message"
+#~ msgstr "Treść błędu"
+
+#~ msgid "Validate"
+#~ msgstr "Walidacja"
+
+#~ msgid "Disable"
+#~ msgstr "Wyłącz"
+
+#~ msgid "To name"
+#~ msgstr "Do nazwy"
+
+#~ msgid "Multiple"
+#~ msgstr "Wiele plików"
+
+#~ msgid "Class"
+#~ msgstr "Klasa"
+
+#~ msgid "Add option"
+#~ msgstr "Dodaj opcję"
+
+#~ msgid "Date from"
+#~ msgstr "Data od"
+
+#~ msgid "Date to"
+#~ msgstr "Data to"
+
+#~ msgid "City"
+#~ msgstr "Miasto"
+
+#~ msgid "Time"
+#~ msgstr "Czas"
+
+#~ msgid "Remove"
+#~ msgstr "Usuń"
+
+#~ msgid "Submissions"
+#~ msgstr "Zgłoszenia"
+
+#~ msgid "Forms"
+#~ msgstr "Formularze"
+
+#~ msgid "Options"
+#~ msgstr "Ustawienia"
+
+#~ msgid "Training options"
+#~ msgstr "Opcje szkolenia"
+
+#~ msgid "Add date"
+#~ msgstr "Dodaj datę"
+
+#~ msgid "Delete"
+#~ msgstr "Usuń"
+
+#~ msgid "Form:"
+#~ msgstr "Formularz:"
+
+#~ msgid "Submission was edited"
+#~ msgstr "Zgłoszenie zostało zaktualizowane"
+
+#~ msgid "City:"
+#~ msgstr "Miasto:"
+
+#~ msgid "Date from:"
+#~ msgstr "Data od:"
+
+#~ msgid "Date to:"
+#~ msgstr "Data do:"
+
+#~ msgid "Submissions was deleted"
+#~ msgstr "Zgłoszenie zostało usunięte"
+
+#~ msgid "Submission was deleted"
+#~ msgstr "Zgłoszenie zostało usunięto"
+
+#~ msgid "Submissions was moved to trash"
+#~ msgstr "Zgłoszenie zostało przeniesione do kosza"
+
+#~ msgid "Submission was moved to trash"
+#~ msgstr "Zgłoszenie zostało przeniesione do kosza"
+
+#~ msgid "Submission was archive"
+#~ msgstr "Zgłoszenie zostało zarchiwizowane"
+
+#~ msgid "Submissions was restored"
+#~ msgstr "Zgłoszenie zostało przywrócone"
+
+#~ msgid "Submission was restored"
+#~ msgstr "Zgłoszenie zostało przywrócone"
+
+#~ msgid "New items"
+#~ msgstr "Nowe"
+
+#~ msgid "Reading"
+#~ msgstr "Przeczytane"
+
+#~ msgid "Archive"
+#~ msgstr "Archiwum"
+
+#~ msgid "Trash"
+#~ msgstr "Kosz"
+
+#~ msgid "Form was deleted"
+#~ msgstr "Formularz został usunięty"
+
+#~ msgid "Add new form"
+#~ msgstr "Dodaj formularz"
+
+#~ msgid "Form was saved"
+#~ msgstr "Formularz został dodany"
+
+#~ msgid "Form was updated"
+#~ msgstr "Formularz został zaktualizowany"
+
+#~ msgid "Preview"
+#~ msgstr "Podgląd"
+
+#~ msgid "The field is required"
+#~ msgstr "Pole jest wymagane"
+
+#~ msgid "Minimum characters:"
+#~ msgstr "Minimum znaków:"
+
+#~ msgid "Maximum characters:"
+#~ msgstr "Maksimum znaków:"
+
+#~ msgid "Url is invalid"
+#~ msgstr "Adres URL jest niepoprawny"
+
+#~ msgid "Email is incorect"
+#~ msgstr "Adres email jest niepoprawny"
+
+#~ msgid "Incorect NIP number"
+#~ msgstr "Niepoprawny numer NIP"
+
+#~ msgid "Incorect PESEL number"
+#~ msgstr "Niepoprawny numer PESEL"
+
+#~ msgid "Incorect postal code"
+#~ msgstr "Niepoprawny kod pocztowy"
+
+#~ msgid "Incorect date format"
+#~ msgstr "Niepoprawny format daty"
+
+#~ msgid "Firstname"
+#~ msgstr "Imię"
+
+#~ msgid "Lastname"
+#~ msgstr "Nazwisko"
+
+#~ msgid "Email"
+#~ msgstr "Adres e-mail"
+
+#~ msgid "Training: "
+#~ msgstr "Szkolenie:"
+
+#~ msgid "Request for training: %s"
+#~ msgstr "Zgłoszenie na szkolenie: %s"
+
+#~ msgid "Request has been sent."
+#~ msgstr "Zgłoszenie zostało wysłane"
+
+#~ msgid "Training date:"
+#~ msgstr "Data szkolenia:"
+
+#~ msgid "Data:"
+#~ msgstr "Dane:"
+
+#~ msgid "Training city:"
+#~ msgstr "Miasto szkolenia:"
+
+#~ msgid "Persons:"
+#~ msgstr "Osoby:"
+
+#~ msgid "Signup"
+#~ msgstr "Zarejestruj się"
+
+#~ msgid "No trainings in this day"
+#~ msgstr "Brak szkoleń w tym dniu"
+
+#~ msgid "Add field"
+#~ msgstr "Dodaj pole"
+
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+
+#~ msgid "Form"
+#~ msgstr "Formularz"
+
+#~ msgid "Form name"
+#~ msgstr "Nazwa formularza"
+
+#~ msgid "Validate error"
+#~ msgstr "Treść błędu walidacji"
+
+#~ msgid "min"
+#~ msgstr "min"
+
+#~ msgid "max"
+#~ msgstr "max"
+
+#~ msgid "Validation"
+#~ msgstr "Walidacja"
+
+#~ msgid "Generate validation script"
+#~ msgstr "Generuj skrypt walidacji"
+
+#~ msgid "Validation script:"
+#~ msgstr "Skrypt walidacji:"
+
+#~ msgid "View"
+#~ msgstr "Zobacz"
+
+#~ msgid "Name"
+#~ msgstr "Nazwa"
+
+#~ msgid "Date"
+#~ msgstr "Data"
+
+#~ msgid "Shortcode"
+#~ msgstr "Shortcode"
+
+#~ msgid "Options saved."
+#~ msgstr "Ustawienia zostały zapisane"
+
+#~ msgid "All revisions was removed."
+#~ msgstr "Wszystkie rewizje zostały usunięte."
+
+#~ msgid "Post type slug"
+#~ msgstr "Nazwa url szkolenia"
+
+#~ msgid "Default: training"
+#~ msgstr "Domyślnie: training"
+
+#~ msgid "Category slug"
+#~ msgstr "Slug kategorii"
+
+#~ msgid "Default: training_category"
+#~ msgstr "Domyślnie: training_category"
+
+#~ msgid "City slug"
+#~ msgstr "Slug miasta"
+
+#~ msgid "Default: training_city"
+#~ msgstr "Domyślnie: training_city"
+
+#~ msgid "Coaches slug"
+#~ msgstr "Slug trenerów"
+
+#~ msgid "Default: training_coach"
+#~ msgstr "Domyślnie: training_coach"
+
+#~ msgid "Message after submission"
+#~ msgstr "Wiadomość po zapisaniu się na szkolenie"
+
+#~ msgid "Trainings on homepage?"
+#~ msgstr "Szkolenia na stronie głównej?"
+
+#~ msgid "SMTP"
+#~ msgstr "SMTP"
+
+#~ msgid "To"
+#~ msgstr "Do"
+
+#~ msgid "Email or emails separated by comma"
+#~ msgstr "Email lub emaile oddzielone przecinkiem"
+
+#~ msgid "From"
+#~ msgstr "Od"
+
+#~ msgid "From Name"
+#~ msgstr "Nazwa od"
+
+#~ msgid "SMTP Host"
+#~ msgstr "Host SMTP"
+
+#~ msgid "SMTP Port"
+#~ msgstr "Port SMTP"
+
+#~ msgid "SMTP Authentication"
+#~ msgstr "Poświadczenie SMTP"
+
+#~ msgid "SMTP Debug"
+#~ msgstr "Debugowanie SMTP"
+
+#~ msgid "None"
+#~ msgstr "Brak"
+
+#~ msgid "TLS"
+#~ msgstr "TLS"
+
+#~ msgid "SSL"
+#~ msgstr "SSL"
+
+#~ msgid "SMTP Secure"
+#~ msgstr "Bezpieczeństwo SMTP"
+
+#~ msgid "Username"
+#~ msgstr "Użytkownik"
+
+#~ msgid "Password"
+#~ msgstr "Hasło"
+
+#~ msgid "Save Changes"
+#~ msgstr "Zapisz zmiany"
+
+#~ msgid "Training:"
+#~ msgstr "Szkolenie:"
+
+#~ msgid "ID:"
+#~ msgstr "ID:"
+
+#~ msgid "Back"
+#~ msgstr "Wstecz"
+
+#~ msgid "PDF"
+#~ msgstr "PDF"
+
+#~ msgid "Print"
+#~ msgstr "Drukuj"
+
+#~ msgid "To archive"
+#~ msgstr "Przenieś do archiwum"
+
+#~ msgid "Restore"
+#~ msgstr "Przywróc"
+
+#~ msgid "Pers. count"
+#~ msgstr "Liczba osób"
+
+#~ msgid "Move to trash"
+#~ msgstr "Do kosza"
+
+#~ msgid "No items found."
+#~ msgstr "Nie znaleziono pozycji."
+
+#~ msgid "Bulk Actions"
+#~ msgstr "Akcje"
+
+#~ msgid "Apply"
+#~ msgstr "Zatwierdź"
+
+#~ msgid "All dates"
+#~ msgstr "Wszystkie daty"
+
+#~ msgid "List View"
+#~ msgstr "Widok listy"
+
+#~ msgid "Excerpt View"
+#~ msgstr "Widok szczegółowy"
+
+#~ msgid "%s pending"
+#~ msgstr "%s zapisano"
+
+#~ msgid "Select All"
+#~ msgstr "Wybierz wszystkie"
+
+#~ msgid "from"
+#~ msgstr "od"
+
+#~ msgid "to"
+#~ msgstr "do"
+
+#~ msgid "Pages:"
+#~ msgstr "Stron:"
+
+#~ msgid "Display trainings in this month"
+#~ msgstr "Wyświetla szkolenia z tego miesiąca"
+
+#~ msgid "Trainings calendar"
+#~ msgstr "Kalendarz szkoleń"
+
+#~ msgid "Title:"
+#~ msgstr "Tytuł:"
+
+#~ msgid "Address:"
+#~ msgstr "Adres:"
+
+#~ msgid "Display training search form"
+#~ msgstr "Pokaż wyszukiwarkę szkoleń"
+
+#~ msgid "Trainings search"
+#~ msgstr "Wyszukiwarka szkoleń"
+
+#~ msgid "Training type slug"
+#~ msgstr "Slug dla szkoleń"
+
+#~ msgid "Training category slug"
+#~ msgstr "Slug dla kategorii szkoleń"
+
+#~ msgid "New"
+#~ msgstr "Nowy"
+
+#~ msgid "Price:"
+#~ msgstr "Cena:"
+
+#~ msgid "The correct format: 1000, bad format: 1000 zl or 1.000"
+#~ msgstr "Poprawny format: 1000, błędny format 1000 zł lub 1.000"
+
+#~ msgid "Number of vacancies:"
+#~ msgstr "Liczba miejsc:"
+
+#~ msgid "Expiry date of entry:"
+#~ msgstr "Data wygaśnięcia wpisu:"
+
+#~ msgid "Details"
+#~ msgstr "Szczegóły"
+
+#~ msgid "Thanks for register"
+#~ msgstr "Dziękujemy za rejestrację"
+
+#~ msgid "Email options"
+#~ msgstr "Opcje email"
+
+#~ msgid "Messages"
+#~ msgstr "Komunikaty"
+
+#~ msgid "Pagebreak"
+#~ msgstr "Podział strony"
+
+#~ msgid "Deactivate"
+#~ msgstr "Wyłącz"
+
+#~ msgid "Payment for training"
+#~ msgstr "Płatność za szkolenie"
+
+#~ msgid "Add date and location"
+#~ msgstr "Dodaj datę i lokalizacje"
+
+#~ msgid "Submission email"
+#~ msgstr "Email zgłoszeń"
+
+#~ msgid "Remind of payment"
+#~ msgstr "Przypomnij o płatności"
+
+#~ msgid "Invalid email address"
+#~ msgstr "Niepoprawny adres e-mail"
+
+#~ msgid "Invalid url"
+#~ msgstr "Niepoprawny adres url"
+
+#~ msgid "Invalid phone number"
+#~ msgstr "Niepoprawny numer telefonu"
+
+#~ msgid "Invalid regexp"
+#~ msgstr "Format danych jest niepoprawny"
+
+#~ msgid "%s is required field"
+#~ msgstr "Pole %s jest wymagane"
+
+#~ msgid "%s is max characters"
+#~ msgstr "Pole %s zawiera za dużo  znaków"
+
+#~ msgid ""
+#~ "Validation information: for validation type email to validate email. "
+#~ "Avaible validations: email, url, ip, nip, pesel, int or regex [0-9][a-Z]"
+#~ msgstr ""
+#~ "Informacja o walidacji: żeby zwalidować pole email wpisz email. Dostepne "
+#~ "opcje walidacji: email, url, ip, nip, pesel, int oraz regex"
+
+#~ msgid "Import an available form"
+#~ msgstr "Importuj dostępny formularz"
+
+#~ msgid "Revision, autosave and editor"
+#~ msgstr "Rewizje, autozapis i edytor"
+
+#~ msgid "Settings"
+#~ msgstr "Ustawienia"
+
+#~ msgid "Company informations"
+#~ msgstr "Informacje o firmie"
+
+#~ msgid "Training id:"
+#~ msgstr "Id szkolenia:"
+
+#~ msgid "Company name:"
+#~ msgstr "Nazwa firmy:"
+
+#~ msgid "NIP:"
+#~ msgstr "NIP:"
+
+#~ msgid "Phone:"
+#~ msgstr "Telefon:"
+
+#~ msgid "Fax:"
+#~ msgstr "Fax:"
+
+#~ msgid "Email:"
+#~ msgstr "Email:"
+
+#~ msgid "Company:"
+#~ msgstr "Firma:"
+
+#~ msgid "Own form"
+#~ msgstr "Własny formularz"
+
+#~ msgid "Show"
+#~ msgstr "Pokaż"
+
+#~ msgid "Hide"
+#~ msgstr "Ukryj"
+
+#~ msgid "Duplicate"
+#~ msgstr "Duplikuj"
+
+#~ msgid "Send"
+#~ msgstr "Wyślij"
+
+#~ msgid "Street"
+#~ msgstr "Ulica"
+
+#~ msgid "NIP"
+#~ msgstr "NIP"
+
+#~ msgid "Phone number"
+#~ msgstr "Numer tel."
+
+#~ msgid "Fax"
+#~ msgstr "Fax"
+
+#~ msgid "I agree to publish my questions on the website"
+#~ msgstr "Wyrażam zgodę na publikację mojego zapytania na stronie"
+
+#~ msgid "Attention! When posting questions, personal data will be plotted."
+#~ msgstr ""
+#~ "Uwaga! W przypadku opublikowania pytania, dane osobowe zostaną wykreślone."
+
+#~ msgid "Request for access to public information has been sent."
+#~ msgstr "Wniosek o udostepnienie informacji publicznej został wysłany."
+
+#~ msgid "Fields marked with an asterisk (*) must be filled"
+#~ msgstr "Pola oznaczone gwiazdką (*) należy wypełnić"
+
+#~ msgid "Imię"
+#~ msgstr "Imi"
+
+#~ msgid "Dynamic Forms"
+#~ msgstr "Formularze Dynamiczne"
+
+#~ msgid "Dynamic Form"
+#~ msgstr "Formularz Dynamiczny"
+
+#~ msgid "Label:"
+#~ msgstr "Etykieta"
+
+#~ msgid "Your password has expired. Update your password!"
+#~ msgstr "Twoje hasło wygasło. Zaktualizuj swoje hasło!"
+
+#~ msgid "Go to settings page"
+#~ msgstr "Idź do strony ustawień"
+
+#~ msgid "Event log"
+#~ msgstr "Rejestr zdarzeń"
+
+#~ msgid "BIP"
+#~ msgstr "BIP"
+
+#~ msgid "Logs"
+#~ msgstr "Rejestr"
+
+#~ msgid "Banned"
+#~ msgstr "Zablokowani"
+
+#~ msgid ""
+#~ "From this screen you can see what action has been taken in the system."
+#~ msgstr ""
+#~ "Z poziomu tego ekranu możesz sprawdzić jakie działania zostały wykonane w "
+#~ "systemie."
+
+#~ msgid "You can also filter the events and delete them."
+#~ msgstr "Możesz również filtrować zdarzenia oraz je usuwać."
+
+#~ msgid "Banned IP was deleted"
+#~ msgstr "Zbanowany adres IP został usunięty"
+
+#~ msgid "Instructions for using the BIP"
+#~ msgstr "Instrukcja korzystania z BIP"
+
+#~ msgid ""
+#~ "<p>The user selects the specific information from the menu at the top. It "
+#~ "will display in the right-hand window. On the left you see the expanded "
+#~ "navigation menu tab.</p><p>Clicking on the logo with the words Public "
+#~ "Information Bulletin will return to the main page.</p><p>In the top menu "
+#~ "on the home page there is a passage to the map page. Below the top of the "
+#~ "menu is a module for searching for information on the site.</p><p>In the "
+#~ "search box, enter search text, and then press the Enter key or click the "
+#~ "button below. A list of documents and themes found matching your search "
+#~ "criteria.</p>Data Editor and the people responsible for maintaining the "
+#~ "journalists are in the Contact section.</p>"
+#~ msgstr ""
+#~ "<p>Użytkownik strony wybiera określoną informację z menu znajdującego się "
+#~ "u góry. Wyświetlenie jej nastąpi w prawym oknie strony. Po lewej stronie "
+#~ "zostanie wyświetlone rozszerzone menu nawigacyjne danej zakładki.</"
+#~ "p><p>&#160;</p><p>Kliknięcie w logo z napisem Biuletyn Informacji "
+#~ "Publicznej spowoduje powrót do strony głównej serwisu.</p><p>&#160;</"
+#~ "p><p>W górnym menu na stronie głównej znajduje się przejście do mapy "
+#~ "strony. Poniżej górnego menu znajduje się moduł umożliwiający "
+#~ "wyszukiwanie informacji na stronie.</p><p>&#160;</p><p>W pole "
+#~ "wyszukiwarki należy wpisać szukany tekst, a następnie nacisnąć klawisz "
+#~ "Enter lub nacisnąć przycisk znajdujący się poniżej. Zostanie wyświetlona "
+#~ "lista znalezionych dokumentów i tematów odpowiadających kryteriom "
+#~ "wyszukiwania.</p><p>&#160;</p><p>Dane redaktora strony oraz osób "
+#~ "odpowiedzialnych za obsługę dziennikarzy znajdują się w zakładce Kontakt."
+#~ "</p>"
+
+#~ msgid "Privacy policy"
+#~ msgstr "Polityka prywatności"
+
+#~ msgid ""
+#~ "<p><strong>Preamble</strong></p><p></p><p>Our institution attaches "
+#~ "particular importance to the privacy of visitors to our site. We want "
+#~ "every user knows exactly what data we get and how it can protect your "
+#~ "privacy.</p><p></p><p>data administrator is ...</p><p></p><p>This web "
+#~ "site contains links to other websites. We can not be held responsible for "
+#~ "the privacy practices on other sites. We encourage you to after going to "
+#~ "another website read their privacy policies.</p><p></p>The following text "
+#~ "<p>governs your use of our sites and their privacy policies.</p><p></"
+#~ "p><p><strong>What information we collect about you?</strong></p><p></"
+#~ "p><p>During your visit, our servers automatically record called. System "
+#~ "logs - anonymous information such as the time of your visit, IP address, "
+#~ "URL, browser, etc.</p><p></p><p>Jewels logs are stored indefinitely as "
+#~ "auxiliary material used to administer the service. The information "
+#~ "contained therein shall not be disclosed to anyone other than persons "
+#~ "authorized to administer the server and the network department.</p><p></"
+#~ "p><p>addition, our service collects anonymous data about sites visited, "
+#~ "such as the number of visits, country, browser, time of visits, etc. We "
+#~ "analyze the collected data using an external solution provider. "
+#~ "Currently, we use Google Analytics. The tool is based on the so-called. "
+#~ "cookies and does not share personally identifiable information. Please "
+#~ "read the details of the Google Analytics privacy policy.</p><p></"
+#~ "p><p>When you contact us via the contact form, phone, email, etc. you "
+#~ "give us your personal information, such as your name, e-mail address, "
+#~ "etc. This information is used to contact - drawing to answer the question."
+#~ "</p><p></p><p>If you subscribed to our newsletter-a, or in other ways "
+#~ "have been added to the database of subscribers will use your information "
+#~ "to send you our newsletter.</p><p></p><p>personal data (name, surname, "
+#~ "email address) collected the forms are only for contact purposes.</p><p></"
+#~ "p><p><strong>How can you tell us about the change of data?</strong></"
+#~ "p><p></p><p>at any time you have the opportunity to unsubscribe from the "
+#~ "database directly from the subscribers http://ms.gov.pl/newsletter or "
+#~ "link included in the footer of messages sent to your email address.</"
+#~ "p><p></p><p>the data collected by the forms You can cancel or modify the "
+#~ "data, by sending the address information internet@ms.gov.pl the extent to "
+#~ "modify or delete the data.</p><p></p><p><strong>use cookies (\"cookies"
+#~ "\")</strong></p><p></p><p>service ms.gov.pl including bip.ms.gov.pl uses "
+#~ "cookies (\"cookies\"). They identify your browser and improve service "
+#~ "performance. In your browser, you can choose to decline cookies, however, "
+#~ "some website functionality may not work properly. Cookies do not contain "
+#~ "any personal information.</p><p></p><p><strong>Privacy Policy Changes </"
+#~ "strong></p><p></p><p>reserve the right to amend this privacy policy by "
+#~ "posting the new Privacy Policy on this subpage.</p>"
+#~ msgstr ""
+#~ "<p><strong>Preambuła</strong></p><p>&#160;</p><p>Nasza instytucja "
+#~ "przywiązuje szczególną wagę do poszanowania prywatności użytkowników "
+#~ "odwiedzających nasz serwis. Zależy nam, aby każdy użytkownik dokładnie "
+#~ "wiedział jakie dane pozyskujemy i jak może chronić swoją prywatność.</"
+#~ "p><p>&#160;</p><p>Administratorem danych jest ...</p><p>&#160;</"
+#~ "p><p>Niniejsza strona internetowa zawiera odnośniki do innych stron "
+#~ "internetowych. Nie możemy ponosić odpowiedzialności za zasady zachowania "
+#~ "prywatności obowiązujące na innych stronach. Zachęcamy, by po przejściu "
+#~ "na inną stronę internetową zapoznać się z ich polityką prywatności.</"
+#~ "p><p>&#160;</p><p>Poniższy tekst określa warunki korzystania z naszych "
+#~ "serwisów oraz ich politykę prywatności.</p><p>&#160;</p><p><strong>Jakie "
+#~ "dane zbieramy o użytkowniku?</strong></p><p>&#160;</p><p>Podczas Twojej "
+#~ "wizyty nasze serwery automatycznie zapisują tzw. logi systemowe - "
+#~ "anonimowe informacje takie jak czas twojej wizyty, adres ip, adres url, "
+#~ "przeglądarka, itp.</p><p>&#160;</p><p>Zebrane logi przechowywane są przez "
+#~ "czas nieokreślony jako materiał pomocniczy służący do administrowania "
+#~ "serwisem. Informacje w nich zawarte nie są ujawniane nikomu poza osobami "
+#~ "upoważnionymi do administrowania serwerem oraz siecią resortu.</"
+#~ "p><p>&#160;</p><p>Dodatkowo nasz serwis gromadzi anonimowe dane dotyczące "
+#~ "odwiedzanych stron takie jak: liczba odwiedzin, kraj, przeglądarka, czas "
+#~ "wizyty itp. Analizujemy gromadzone dane korzystając z rozwiązania "
+#~ "zewnętrznego dostawcy. Aktualnie używamy Google Analytics. Narzędzie "
+#~ "działa w oparciu o tzw. pliki cookie i nie udostępnia danych "
+#~ "umożliwiających identyfikację osoby. Prosimy o zapoznanie się ze "
+#~ "szczegółami polityki prywatności Google Analytics.</p><p>&#160;</p><p>Gdy "
+#~ "kontaktujesz się z nami za pomocą formularza kontaktowego, telefonu, "
+#~ "poczty e-mail, itp. przekazujesz nam swoje dane osobowe, np. imię, "
+#~ "nazwisko, adres e-mail, itp. Dane te wykorzystywane są w celu kontaktowym "
+#~ "– sporządzeniu odpowiedzi na pytanie.</p><p>&#160;</p><p>Jeżeli zapisałeś "
+#~ "się do naszego newsletter-a lub w inny sposób zostałeś dodany do bazy "
+#~ "subskrybentów wykorzystamy twoje dane w celu wysłania ci naszego "
+#~ "biuletynu.</p><p>&#160;</p><p>Dane osobowe (imię, nazwisko, adres email) "
+#~ "zbierane przez formularze służą wyłącznie do celów kontaktowych.</"
+#~ "p><p>&#160;</p><p><strong>W jaki sposób możesz poinformować nas o zmianie "
+#~ "danych?</strong></p><p>&#160;</p><p>W każdej chwili masz możliwość "
+#~ "wypisania się z bazy subskrybentów bezpośrednio ze strony http://ms.gov."
+#~ "pl/newsletter lub odnośnika zawartego w stopce wiadomości przesłanej na "
+#~ "twój adres email.</p><p>&#160;</p><p>W przypadku danych gromadzonych "
+#~ "przez formularze masz możliwość usunięcia lub modyfikacji tych danych, "
+#~ "poprzez przesłanie na adres internet@ms.gov.pl informacji w jakim "
+#~ "zakresie należy zmodyfikować lub usunąć te dane<strong>.</strong></"
+#~ "p><p>&#160;</p><p><strong>Wykorzystanie ciasteczek (\"cookies\")</"
+#~ "strong></p><p>&#160;</p><p>Serwis ms.gov.pl w tym bip.ms.gov.pl "
+#~ "wykorzystuje ciasteczka („cookies”). Identyfikują one Twoją przeglądarkę "
+#~ "oraz usprawniają działanie serwisu. W ustawieniach przeglądarki można "
+#~ "wybrać opcję odrzucania plików cookie, jednak niektóre funkcje serwisu "
+#~ "mogą wtedy nie działać poprawnie. Ciasteczka nie zawierają żadnych danych "
+#~ "osobowych<strong>.</strong></p><p>&#160;</p><p><strong>Zmiany polityki "
+#~ "prywatności</strong></p><p>&#160;</p><p>Zastrzegamy sobie prawo zmiany "
+#~ "powyższej polityki prywatności poprzez opublikowanie nowej polityki "
+#~ "prywatności na tej podstronie.</p>"
+
+#~ msgid "Accessibility"
+#~ msgstr "Dostępność"
+
+#~ msgid ""
+#~ "<p>This website has been designed so that the largest possible number of "
+#~ "users can freely use it on different systems and different browsers "
+#~ "operacycjnych.</p><p> For the visually impaired version of the text "
+#~ "intended, and contrast-enhanced version. You can also change the font "
+#~ "size on the page.</p><p> site, you can also navigate using keyboard "
+#~ "shortcuts or by using the tab key (Tab). Keyboard shortcuts do not "
+#~ "interfere with screen readers and other keyboard shortcuts other browsers."
+#~ "</p><p> The following table provides the keyboard shortcuts used on this "
+#~ "site.</p><ul><li> Go to home page - 1</li><li> Go to the availability - "
+#~ "0</li><li> Go to the contact - 9</li>Go to map <li> Party - 3</li><li> Go "
+#~ "to the version with high contrast - C</li><li> Skip to text version - T</"
+#~ "li><li> Skip to search form - S</li><li> Enlarge font - W</li><li> Reduce "
+#~ "font - M</li></ul>"
+#~ msgstr ""
+#~ "<p>Strona internetowa została zaprojektowana tak, aby jak największa "
+#~ "liczba użytkowników mogła z niej swobodnie korzystać na różnych systemach "
+#~ "operacycjnych i różnych przeglądarkach.</p><p>Dla osób słabowidzących "
+#~ "przeznaczona jest wersja tekstowa oraz wersja zwiększonym kontraście. "
+#~ "Możliwa jest też zmiana wielkości czcionki na stronie.</p><p>Po witrynie "
+#~ "można poruszać się także za pomocą skrótów klawiaturowych lub poprzez "
+#~ "użycie klawisza tabulacji (Tab). Skróty klawiaturowe nie kolidują z "
+#~ "czytnikami ekranu i innymi skrótami klawiszowymi innych przeglądarek.</"
+#~ "p><p>Poniższa tabela zawiera skróty klawiszowe stosowane na tej stronie.</"
+#~ "p><ul><li>Przejdź do strony głównej - 1</li><li>Przejdź do strony "
+#~ "dostępność - 0</li><li>Przejdź do strony kontakt  - 9</li><li>Przejdź do "
+#~ "mapy Strony - 3</li><li>Przejdź do wersji z wysokim kontrastem - C</"
+#~ "li><li>Przejdź do wersji tekstowej - T</li><li>Przejdź do formularza "
+#~ "wyszukiwania - S</li><li>Powiększ czcionkę - W</li><li>Pomniejsz czcionkę "
+#~ "- M</li></ul>"
+
+#~ msgid "Editorial office"
+#~ msgstr "Redakcja"
+
+#~ msgid ""
+#~ "<p>Website Public Information Bulletin is edited by the expert staff of "
+#~ "the organizational units of our institution.</p><p>Chief Editor: John "
+#~ "Smith</p><p>T: 22 555 55 55, E: John.Doe@webpage.org</p><p></p><p>Editor: "
+#~ "Peter Nowak</p><p>T: 22 555 55 66, E: Piotr.Nowak@webpage.org</p><p></"
+#~ "p><p>Editor: Anna Kowalczyk</p><p>Anna.Kowalczyk@webpage.org</p><p></"
+#~ "p><p>Fax: 22 555 55 77</p>"
+#~ msgstr ""
+#~ "<p>Website Public Information Bulletin is edited by the expert staff of "
+#~ "the organizational units of our institution.</p><p>Chief Editor: John "
+#~ "Smith</p><p>T: 22 555 55 55, E: John.Doe@webpage.org</p><p></p><p>Editor: "
+#~ "Peter Nowak</p><p>T: 22 555 55 66, E: Piotr.Nowak@webpage.org</p><p></"
+#~ "p><p>Editor: Anna Kowalczyk</p><p>Anna.Kowalczyk@webpage.org</p><p></"
+#~ "p><p>Fax: 22 555 55 77</p>"
+
+#~ msgid "Event logs"
+#~ msgstr "Rejestr zdarzeń"
+
+#~ msgid "<p>[eventlogs]</p>"
+#~ msgstr "<p>[eventlogs]</p>"
+
+#~ msgid "Request for access to public information"
+#~ msgstr "Wniosek o udostępnienie informacji publicznej"
+
+#~ msgid ""
+#~ "<p>Pursuant to Art. 61 of the Constitution and Article. Two paragraphs. 1 "
+#~ "and art. Paragraph 10. 1 of the Act of 6 September 2001 on access to "
+#~ "public information (Journal of Laws No. 112, item. 1198, as amended. "
+#~ "Amended.) Please provide details.</p><p>[ask_form]</p><p><strong>Caution:"
+#~ "</strong> According to Article <br/>. Paragraph 13. 1 of the Law on "
+#~ "Access to Public Information - sharing of public information at the "
+#~ "request shall without undue delay, but no later than within 14 days from "
+#~ "the date of the request. If the information can not be released at this "
+#~ "time, the applicant shall be notified within 14 days of your inquiry "
+#~ "about the reasons for the delay and the date on which will provide "
+#~ "information, but no later than two months from the date of submission of "
+#~ "the application.</p><p>In case of delay in access to information - the "
+#~ "applicant is entitled to appeal to the county administrative court.</p>"
+#~ msgstr ""
+#~ "<p>Na podstawie  art. 61 Konstytucji RP oraz art. 2 ust. 1 i art. 10 ust. "
+#~ "1 ustawy z dnia 6 września 2001 r. o dostępie do informacji publicznej "
+#~ "(Dz. U. Nr 112, poz. 1198 z późn. zm.) proszę o udostępnienie informacji."
+#~ "</p><p>[ask_form]</p><p><strong>Pouczenie:</strong><br/>Zgodnie z art. 13 "
+#~ "ust. 1 ustawy o dostępie do informacji publicznej – udostępnianie "
+#~ "informacji publicznej na wniosek następuje bez zbędnej zwłoki, nie "
+#~ "później jednak niż w terminie 14 dni od dnia złożenia wniosku. Jeżeli "
+#~ "informacja nie może być udostępniona w tym terminie, wnioskodawca "
+#~ "powiadamiany jest w ciągu 14 dni od dnia wysłania zapytania o powodach "
+#~ "opóźnienia oraz o terminie, w jakim udostępni informację, nie dłuższym "
+#~ "jednak niż 2 miesiące od dnia złożenia wniosku.</p><p>W przypadku "
+#~ "przekroczenia terminu udostępnienia informacji – wnioskujący jest "
+#~ "uprawniony do wniesienia skargi do wojewódzkiego sądu administracyjnego.</"
+#~ "p>"
+
+#~ msgid "Counter"
+#~ msgstr "Licznik"
+
+#~ msgid "Block"
+#~ msgstr "Zablokuj"
+
+#~ msgid "Document"
+#~ msgstr "Dokument"
+
+#~ msgid "Manage Documents"
+#~ msgstr "Zarządzaj dokumentami"
+
+#~ msgid "Documents <span class=\"count\">(%s)</span>"
+#~ msgstr "Dokumenty <span class=\"count\">(%s)</span>"
+
+#~ msgid "%s - Failed login"
+#~ msgstr "%s - Niepoprawne logowanie"
+
+#~ msgid "Incorrect log-on from the IP address: %s, login: %s"
+#~ msgstr "Niepoprawne logowanie z adresu: %s, nazwa użytkownika: %s"
+
+#~ msgid "About document"
+#~ msgstr "O dokumencie"
+
+#~ msgid "Post format"
+#~ msgstr "Format wpisu"
+
+#~ msgid "Attachments"
+#~ msgstr "Załączniki"
+
+#~ msgid "Auction"
+#~ msgstr "Zamówienie publiczne"
+
+#~ msgid "Contract"
+#~ msgstr "Umowa"
+
+#~ msgid "Organization"
+#~ msgstr "Organizacja"
+
+#~ msgid "Auction ID:"
+#~ msgstr "ID:"
+
+#~ msgid "Auction value:"
+#~ msgstr "Wartosć:"
+
+#~ msgid "Auction mode:"
+#~ msgstr "Tryb:"
+
+#~ msgid "Auction deadline:"
+#~ msgstr "Termin:"
+
+#~ msgid "Contract ID"
+#~ msgstr "Numer umowy"
+
+#~ msgid "Name of entity"
+#~ msgstr "Nazwa podmiotu (wykonawca)"
+
+#~ msgid "The contract value"
+#~ msgstr "Wartość umowy"
+
+#~ msgid "Date of agreement"
+#~ msgstr "Data zawarcia"
+
+#~ msgid "Date of completion"
+#~ msgstr "Data zakończenia"
+
+#~ msgid "ul. Mickiewicza 18, 00-340, Warszawa"
+#~ msgstr "ul. Mickiewicza 18, 00-340, Warszawa"
+
+#~ msgid "+48 22 55-00-000"
+#~ msgstr "+48 22 55-00-000"
+
+#~ msgid "+48 22 55-00-001"
+#~ msgstr "+48 22 55-00-001"
+
+#~ msgid "Director"
+#~ msgstr "Dyrektor"
+
+#~ msgid "Organization providing:"
+#~ msgstr "Podmiot udostępniający:"
+
+#~ msgid "Document authors:"
+#~ msgstr "Autor dokumentu:"
+
+#~ msgid "or"
+#~ msgstr "lub"
+
+#~ msgid "Changes notes:"
+#~ msgstr "Informacje o zmianie:"
+
+#~ msgid "Publish date:"
+#~ msgstr "Data opublikowania:"
+
+#~ msgid "Editor:"
+#~ msgstr "Edytor:"
+
+#~ msgid "Insert media"
+#~ msgstr "Dodaj media"
+
+#~ msgid ""
+#~ "<strong>ERROR</strong>: Please make the password a strong one. The "
+#~ "password must contain a small and a large letter, number and special "
+#~ "character. The password must contain a minimum of %s characters. The "
+#~ "password can not contain your firstname, surname, nickname or login."
+#~ msgstr ""
+#~ "<strong>Błąd</strong>: Stwórz mocniejsze hasło. Hasło musi zawierać małą "
+#~ "i dużą literę, cyfrę oraz znak specjalny. Hasło musi składać się z "
+#~ "minimum %s znaków. Hasło nie może zawierać twojego imienia, nazwiska, "
+#~ "pseudonimu lub loginu."
+
+#~ msgid ""
+#~ "Define in your inbox settings for applications sent through this form. By "
+#~ "default, applications are sent to the administrator address."
+#~ msgstr ""
+#~ "Zdefiniuj w ustawieniach skrzynkę odbiorczą dla wniosków wysyłanych przez "
+#~ "ten formularz. Domyślnie wnioski wysyłane są na adres administratora "
+#~ "serwisu."
+
+#~ msgid "Enter the information to make."
+#~ msgstr "Wpisz zakres informacji do udostępnienia."
+
+#~ msgid "Select a way to provide information."
+#~ msgstr "Wybierz sposób przekazania informacji."
+
+#~ msgid "<strong>The way forward: shipping by post</strong>"
+#~ msgstr "<strong>Sposób przekazania: pocztą</strong>"
+
+#~ msgid "Enter your firstname/surname or company name."
+#~ msgstr "Wpisz swoje imię/nazwisko lub nazwę instytucji/firmy."
+
+#~ msgid "Enter the complete mailing address."
+#~ msgstr "Wpisz pełny adres do korespondencji."
+
+#~ msgid "<strong>The way forward: the e-mail</strong>"
+#~ msgstr "<strong>Sposób przekazania: na pocztę elektroniczną</strong>"
+
+#~ msgid "Enter your e-mail address."
+#~ msgstr "Wpisz adres e-mail."
+
+#~ msgid "Contact details:"
+#~ msgstr "Dane teleadresowe:"
+
+#~ msgid "The scope of information to make"
+#~ msgstr "Zakres informacji do udostępnienia"
+
+#~ msgid "The way forward:"
+#~ msgstr "Sposób przekazania:"
+
+#~ msgid "Surname"
+#~ msgstr "Nazwisko"
+
+#~ msgid "Way to deliver the information"
+#~ msgstr "Sposób przekazania informacji"
+
+#~ msgid "Send a copy of the request to my email address"
+#~ msgstr "Wyślij kopię wniosku na mój adres e-mail"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "&laquo;"
+#~ msgstr "&laquo;"
+
+#~ msgid "&raquo;"
+#~ msgstr "&raquo;"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "Display information about this document"
+#~ msgstr "Zobacz informacje o dokumencie"
+
+#~ msgid "Auction ID: %s"
+#~ msgstr "ID: %s"
+
+#~ msgid "Auction value: %s"
+#~ msgstr "Wartość: %s"
+
+#~ msgid "Auction mode: %s"
+#~ msgstr "Tryb: %s"
+
+#~ msgid "Auction deadline: %s"
+#~ msgstr "Termin: %s"
+
+#~ msgid ""
+#~ "We use cookies on this website to enable social sharing and monitor site "
+#~ "usage"
+#~ msgstr ""
+#~ "Używamy ciasteczek na tej stronie w celu dostosowania treści i analizy "
+#~ "wejść"
+
+#~ msgid "Thanks, I've read this"
+#~ msgstr "Rozumiem"
+
+#~ msgid "How to manage cookies"
+#~ msgstr "Więcej"
+
+#~ msgid "Disable revisions"
+#~ msgstr "Wyłącz rewizje"
+
+#~ msgid "Count of revisions"
+#~ msgstr "Liczba rewizji"
+
+#~ msgid ""
+#~ "Define here how many revisions you want to keep for every post in your "
+#~ "blog. Zero value disables it."
+#~ msgstr "Zdefiniuj liczbę kopii dla wpisów lub wyłącz ich tworzenie."
+
+#~ msgid "Delete all revision?"
+#~ msgstr "Usunąć wszystkie rewizje?"
+
+#~ msgid "Yes"
+#~ msgstr "Tak"
+
+#~ msgid ""
+#~ "This will clear <strong>ALL</strong> revisions currently existing in your "
+#~ "database. Be careful hence this is not reversible."
+#~ msgstr ""
+#~ "Zaznaczenie <strong>Tak</strong> spowoduje usunięcie wszystkich "
+#~ "dotychczasowych kopii wpisów z bazy danych."
+
+#~ msgid "Disable autosave"
+#~ msgstr "Wyłącz autozapis"
+
+#~ msgid "3 minutes"
+#~ msgstr "3 minuty"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minut"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 minut"
+
+#~ msgid "20 minutes"
+#~ msgstr "20 minut"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 minut"
+
+#~ msgid "Autosave time"
+#~ msgstr "Czas autozapisu"
+
+#~ msgid ""
+#~ "Disable autosave or specify the number of minutes after which post will "
+#~ "be saving"
+#~ msgstr "Wyłącz autozapis lub określ liczbę minut po której on nastąpi"
+
+#~ msgid ""
+#~ "For safety reasons, we recommend disabling plug-ins and templates editor"
+#~ msgstr ""
+#~ "Ze względów bezpieczeństwa rekomendujemy wyłączenie edytora wtyczek i "
+#~ "szablonów"
+
+#~ msgid "Disable trash"
+#~ msgstr "Wyłącz kosz"
+
+#~ msgid "30 days"
+#~ msgstr "30 dni"
+
+#~ msgid "60 days"
+#~ msgstr "60 dni"
+
+#~ msgid "90 days"
+#~ msgstr "90 dni"
+
+#~ msgid "180 days"
+#~ msgstr "180 dni"
+
+#~ msgid "1 year"
+#~ msgstr "1 rok"
+
+#~ msgid ""
+#~ "Disable trash or define number of days before WordPress permanently "
+#~ "deletes posts"
+#~ msgstr ""
+#~ "Wyłącz kosz lub określ liczbę dni, po której WordPress trwale usunie wpisy"
+
+#~ msgid "Comments"
+#~ msgstr "Komentarze"
+
+#~ msgid "We recommend to disable comments"
+#~ msgstr "Rekomendujemy wyłączenie komentarzy"
+
+#~ msgid "Meta box (modules)"
+#~ msgstr "Meta box (moduły)"
+
+#~ msgid ""
+#~ "On the home page dashboard shows the following modules. You can disable "
+#~ "it by checking the box."
+#~ msgstr ""
+#~ "Na stronie głównej kokpitu widoczne są następujące moduły. Zaznacz pole, "
+#~ "aby je wyłączyć."
+
+#~ msgid "Modules"
+#~ msgstr "Moduły"
+
+#~ msgid ""
+#~ "In the edit form entries / pages following modules are available. You can "
+#~ "disable it by checking the box."
+#~ msgstr ""
+#~ "W formularzu edycji wpisów / stron dostępne są następujące moduły. "
+#~ "Zaznacz pole, aby je wyłączyć."
+
+#~ msgid "Public Information Bulletin"
+#~ msgstr "Biuletyn Informacji Publicznej"
+
+#~ msgid "Default content"
+#~ msgstr "Domyślna treść"
+
+#~ msgid "Page exists!"
+#~ msgstr "Strona istnieje!"
+
+#~ msgid "Page not exists!"
+#~ msgstr "Strona nie istnieje!"
+
+#~ msgid "Inbox"
+#~ msgstr "Skrzynka odbiorcza"
+
+#~ msgid ""
+#~ "Enter your email address for sending requests under access to public "
+#~ "information."
+#~ msgstr ""
+#~ "Wpisz adres e-mail, na który będą wysyłane wnioski w trybie dostępu do "
+#~ "informacji publicznej."
+
+#~ msgid "CC"
+#~ msgstr "DW"
+
+#~ msgid ""
+#~ "Allow you to send a copy of the request to the email address of the "
+#~ "applicant."
+#~ msgstr "Pozwól na wysyłanie kopii wniosku na adres e-mail wnioskodawcy."
+
+#~ msgid "Additional information after sending a request"
+#~ msgstr "Dodatkowa informacja po wysłaniu wniosku"
+
+#~ msgid "Enter the text that appears after sending the request."
+#~ msgstr "Wpisz treść, która ukaże się po wysłaniu wniosku."
+
+#~ msgid "Security"
+#~ msgstr "Bezpieczeństwo"
+
+#~ msgid "Login"
+#~ msgstr "Logowanie"
+
+#~ msgid "Autoban IP"
+#~ msgstr "Automatyczne blokowanie"
+
+#~ msgid "Enable"
+#~ msgstr "Włącz"
+
+#~ msgid ""
+#~ "Check this box if you want the system to automatically block access to "
+#~ "the cockpit for exceeding a defined number of login attempts."
+#~ msgstr ""
+#~ "Zaznacz to pole jeśli chcesz, żeby system automatycznie blokował dostęp "
+#~ "do kokpitu po przekroczeniu zdefiniowanej liczby prób logowań."
+
+#~ msgid "Number of login failures"
+#~ msgstr "Liczba błędnych logowań"
+
+#~ msgid ""
+#~ "Select the number of login failures, followed by a block access to the "
+#~ "cockpit."
+#~ msgstr ""
+#~ "Wybierz liczbę błędnych logowań, po której nastąpi zablokowanie dostępu "
+#~ "do kokpitu."
+
+#~ msgid "Level lock"
+#~ msgstr "Poziom blokady"
+
+#~ msgid ""
+#~ "1 - Disable access to admin and login page, 2 - disable access to whole "
+#~ "webiste"
+#~ msgstr ""
+#~ "1 - Wyłącz dostęp do kokpitu i strony logowania, 2 - wyłącz dostęp do "
+#~ "całej strony"
+
+#~ msgid ""
+#~ "Check this box if you want the system to send email notification about "
+#~ "failed login."
+#~ msgstr ""
+#~ "Zaznacz to pole jeśli chcesz, żeby system automatycznie wysyłał "
+#~ "powiadomienia o błędnym logowaniu."
+
+#~ msgid "Passwords policy"
+#~ msgstr "Polityka haseł"
+
+#~ msgid "Password strong"
+#~ msgstr "Złożoność hasła"
+
+#~ msgid ""
+#~ "Password must contain: 1 small and big letter, digit and special char "
+#~ "like: !@#$%^&;:?+-_,."
+#~ msgstr ""
+#~ "Hasło musi zawierać dużą i małą literę, cyfrę oraz znaki specjalne takie "
+#~ "jak: !@#$%^&;:?+-_,"
+
+#~ msgid "Password lenght"
+#~ msgstr "Długość hasła"
+
+#~ msgid "Define minimum of password lenght."
+#~ msgstr "Zdefiniuj minimalną długość hasła."
+
+#~ msgid "Do not force"
+#~ msgstr "Nie wymuszaj"
+
+#~ msgid "Force password change"
+#~ msgstr "Wymuś zmianę hasła"
+
+#~ msgid "every"
+#~ msgstr "co"
+
+#~ msgid "Force password change after a certain time."
+#~ msgstr "Wymuś zmianę hasła po określonym czasie."
+
+#~ msgid "Cookie Policy"
+#~ msgstr "Polityka plików cookie"
+
+#~ msgid "Display cookie notification"
+#~ msgstr "Pokaż powiadomienie o ciasteczkach"
+
+#~ msgid "Notification text"
+#~ msgstr "Tekst powiadomienia"
+
+#~ msgid "Accept text"
+#~ msgstr "Tekst akceptacji"
+
+#~ msgid "More link text"
+#~ msgstr "Tekst odnośnika"
+
+#~ msgid "Cookie name"
+#~ msgstr "Nazwa ciasteczka"
+
+#~ msgid "Link to page"
+#~ msgstr "Odnośnik do strony"
+
+#~ msgid "Text colour"
+#~ msgstr "Kolor tekstu"
+
+#~ msgid "Link colour"
+#~ msgstr "Kolor odnośnika"
+
+#~ msgid "Bar colour"
+#~ msgstr "Kolor belki"
+
+#~ msgid "Button colour"
+#~ msgstr "Kolor przycisku"
+
+#~ msgid "Position"
+#~ msgstr "Pozycja"
+
+#~ msgid "Bottom"
+#~ msgstr "Dół"
+
+#~ msgid "Firstname and lastname"
+#~ msgstr "Imię i nazwisko"
+
+#~ msgid "Contact"
+#~ msgstr "Dane kontaktowe"
+
+#~ msgid "Publish agreement"
+#~ msgstr "Zgoda na publikację"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Get event"
+#~ msgstr "Wybierz wszystkie zdarzenia"
+
+#~ msgid "Filter"
+#~ msgstr "Przefiltruj"
+
+#~ msgid "Post"
+#~ msgstr "Wpis"
+
+#~ msgid "FAQ"
+#~ msgstr "FAQ"
+
+#~ msgid "Revision"
+#~ msgstr "Rewizje"
+
+#~ msgid "Comment"
+#~ msgstr "Komentarz"
+
+#~ msgid "User"
+#~ msgstr "Użytkownik"
+
+#~ msgid "Plugin"
+#~ msgstr "Wtyczka"
+
+#~ msgid "Logout"
+#~ msgstr "Wylogowanie"
+
+#~ msgid "Insert"
+#~ msgstr "Dodanie"
+
+#~ msgid "Publish"
+#~ msgstr "Publikacja"
+
+#~ msgid "Save as draft"
+#~ msgstr "Zapisz jako szkic"
+
+#~ msgid "Private"
+#~ msgstr "Zapisz jako prywatny"
+
+#~ msgid "Future"
+#~ msgstr "Zaplanowany"
+
+#~ msgid "Failed"
+#~ msgstr "Niepowodzenie"
+
+#~ msgid "Success"
+#~ msgstr "Powodzenie"
+
+#~ msgid "Activate"
+#~ msgstr "Włącz"
+
+#~ msgid "By email"
+#~ msgstr "Pocztą elektroniczną"
+
+#~ msgid "In the office (for viewing / copying)"
+#~ msgstr "W biurze (do wglądu / kopiowania)"
+
+#~ msgid "Photocopy - personal collection"
+#~ msgstr "Kserokopia - odbiór osobisty"
+
+#~ msgid "Photocopy - shipping by post office"
+#~ msgstr "Kserokopia - wysyłka pocztą"
+
+#~ msgid "Information on storage media (CD / DVD) - personal collection"
+#~ msgstr "Informacje na nośniku danych (CD/DVD) - odbiór osobisty"
+
+#~ msgid "Information on storage media (CD / DVD) - shipping by post office"
+#~ msgstr "Informacje na nośniku danych (CD/DVD) - wysyłka pocztą"
+
+#~ msgid "Unlimited auction"
+#~ msgstr "Przetarg nieograniczony"
+
+#~ msgid "Limited auction"
+#~ msgstr "Przetarg ograniczony"
+
+#~ msgid "Price question"
+#~ msgstr "Zapytanie o cenę"
+
+#~ msgid "Competitive dialogue"
+#~ msgstr "Dialog konkurencyjny"
+
+#~ msgid "Competition"
+#~ msgstr "Konkurs"
+
+#~ msgid "Electronic bidding"
+#~ msgstr "Licytacja elektroniczna"
+
+#~ msgid "Negotiations"
+#~ msgstr "Negocjacje"
+
+#~ msgid "The estimated value"
+#~ msgstr "Wartość szacunkowa"
+
+#~ msgid "Mode"
+#~ msgstr "Tryb"
+
+#~ msgid "Export logs to file"
+#~ msgstr "Eksportuj logi do pliku"
+
+#~ msgid "Export"
+#~ msgstr "Eksport"
+
+#, fuzzy
+#~ msgid "Firstname / Lastname"
+#~ msgstr "Imię i nazwisko"
+
+#~ msgid "Enter question here"
+#~ msgstr "Wprowadź pytanie w tym miejscu"
+
+#~ msgid "Enter cell name here"
+#~ msgstr "Wprowadź tytuł komórki w tym miejscu"
+
+#~ msgid "Enter contract name here"
+#~ msgstr "Wprowadź tytuł umowy w tym miejscu"
+
+#~ msgid "Public auctions"
+#~ msgstr "Zamówienia publiczne"
+
+#~ msgid "Public auction"
+#~ msgstr "Zamówienie publiczne"
+
+#~ msgid "Edit Auction"
+#~ msgstr "Edytuj zamówienie"
+
+#~ msgid "New Auction"
+#~ msgstr "Nowe zamówienie"
+
+#~ msgid "View Auction"
+#~ msgstr "Zobacz zamówienie"
+
+#~ msgid "Search Auctions"
+#~ msgstr "Szukaj zamówień"
+
+#~ msgid "No auctions found"
+#~ msgstr "Nie znaleziono zamówień"
+
+#~ msgid "No auctions found in Trash"
+#~ msgstr "Nie znaleziono zamówień w koszu"
+
+#~ msgid "Contracts"
+#~ msgstr "Umowy"
+
+#~ msgid "Edit Contract"
+#~ msgstr "Edytuj umowę"
+
+#~ msgid "New Contract"
+#~ msgstr "Nowa umowa"
+
+#~ msgid "Search Contracts"
+#~ msgstr "Szukaj umów"
+
+#~ msgid "No contracts found in Trash"
+#~ msgstr "Nie znaleziono rekordów w koszu"
+
+#~ msgid "Questions and anserws"
+#~ msgstr "Pytania i odpowiedzi"
+
+#~ msgid "Add New Question"
+#~ msgstr "Dodaj nowe pytanie"
+
+#~ msgid "Edit Question"
+#~ msgstr "Edytuj pytanie"
+
+#~ msgid "New Question"
+#~ msgstr "Nowe pytanie"
+
+#~ msgid "View Question"
+#~ msgstr "Zobacz pytanie"
+
+#~ msgid "Search Questions"
+#~ msgstr "Szukaj pytań"
+
+#~ msgid "No questions found"
+#~ msgstr "Nie znaleziono pytań"
+
+#~ msgid "No questions found in Trash"
+#~ msgstr "Nie znaleziono pytań w koszu"
+
+#~ msgid "FAQs"
+#~ msgstr "FAQs"
+
+#~ msgid "About auction"
+#~ msgstr "O zamówieniu"
+
+#~ msgid "About cell"
+#~ msgstr "Informacje o komórce"
+
+#~ msgid "About contract"
+#~ msgstr "O umowie"
+
+#~ msgid "Login fail"
+#~ msgstr "Błędne logowanie "
+
+#~ msgid "Login fail from IP: "
+#~ msgstr "Błędne logowanie z adresu IP:"
+
+#~ msgid "Publish page"
+#~ msgstr "Publikacja"
+
+#~ msgid "Login failed"
+#~ msgstr "Błędne logowanie"
+
+#~ msgid "Organization providing"
+#~ msgstr "Podmiot udostępniający"
+
+#~ msgid "Document authors"
+#~ msgstr "Autor dokumentu"
+
+#~ msgid "Configure SMTP"
+#~ msgstr "Skonfiguruj SMTP"
+
+#~ msgid "All Questions"
+#~ msgstr "Wszystkie pytania"
+
+#~ msgid ""
+#~ "I agree to the publication of my inquiry on the public information "
+#~ "bulletin"
+#~ msgstr "Wyrażam zgodę na publikację moje zapytania na stronie"
+
+#~ msgid ""
+#~ "It allows you to build the Public Information Bulletin (governed by "
+#~ "Polish law)"
+#~ msgstr "Wtyczka pozwala na uruchomienie Biuletynu Informacji Publicznej"
+
+#~ msgid "About organization"
+#~ msgstr "Informacje o organizacji"
+
+#~ msgid "Organizations"
+#~ msgstr "Organizacje"
+
+#~ msgid "Departments"
+#~ msgstr "Komórki organizacyjne"
+
+#~ msgid "Department"
+#~ msgstr "Komórka organizacyjna"
+
+#~ msgid "Check to enable"
+#~ msgstr "Włącz"
+
+#~ msgid ""
+#~ "Define here time elapsed between each revision being saved automaticaly. "
+#~ "Zero value disables it."
+#~ msgstr ""
+#~ "Zdefiniuj czas pomiędzy automatycznym zapisem wpisów/stron lub wyłącz go."
+
+#~ msgid "Restrict access"
+#~ msgstr "Ogranicz dostęp"
+
+#~ msgid ""
+#~ "Restrict access to specified IP addresses. Seperated address with commas."
+#~ msgstr ""
+#~ "Ogranicz dostęp do podanych adresów IP. Adresy rozdziel przecinkiem."
+
+#~ msgid "Your IP address is: %1$s"
+#~ msgstr "Twó adres IP to: %1$s"
+
+#~ msgid "3 years"
+#~ msgstr "3 lata"
+
+#~ msgid "5 years"
+#~ msgstr "5 lat"
+
+#~ msgid "Capture the following actions:"
+#~ msgstr "Wybierz akcje, które będą zapisywane w logach."
+
+#~ msgid "Other settings"
+#~ msgstr "Dodatkowe ustawienia"
+
+#~ msgid "Keep logs for: "
+#~ msgstr "Przechowuj logi przez: "
+
+#~ msgid "Select time to export:"
+#~ msgstr "Wybierz przedział czasowy:"
+
+#~ msgid "All events"
+#~ msgstr "Wszystkie zdarzenia"
+
+#~ msgid "or delete exported rows from database"
+#~ msgstr "lub usuń wyeksportowane rekordy z bazy"
+
+#~ msgid "Biuletin"
+#~ msgstr "Biuletyn"
+
+#~ msgid "Eventlog list"
+#~ msgstr "Rejestr zmian"
+
+#~ msgid "Failed to create page."
+#~ msgstr "Nie można utworzyć strony."
+
+#~ msgid "Eventlog list page successfully created."
+#~ msgstr "Strona rejestru zmian została utworzona."
+
+#~ msgid "Text"
+#~ msgstr "Tekst"
+
+#~ msgid "Instruction"
+#~ msgstr "Instrukcja"
+
+#~ msgid "You have selected the mail! Enter the complete mailing address."
+#~ msgstr "Wybrałeś przesyłkę pocztową! Wpisz pełny adres do korespondencji."
+
+#~ msgid "Enter your surname."
+#~ msgstr "Wpisz swoje nazwisko."
+
+#~ msgid "Create a sample page"
+#~ msgstr "Utwórz przykładowe strony"
+
+#~ msgid "Create page"
+#~ msgstr "Utwórz strony"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Polityka prywatności"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Skróty klawiaturowe"
+
+#~ msgid "Check the box to create a sample content for the pages."
+#~ msgstr "Zaznacz pola, żeby stworzyć przykładową treść dla w/w stron. "
+
+#~ msgid "Allow to send the application to the applicant."
+#~ msgstr "Pozwól na wysyłanie wniosku do wiadomości wnioskodawcy."
+
+#~ msgid "Keyboard shortcuts"
+#~ msgstr "Skróty klawiaturowe"
+
+#~ msgid "Send copy to me"
+#~ msgstr "Wyślij kopię wniosku na mój adres email"
+
+#~ msgid "Enter information to be made available"
+#~ msgstr "Wpisz zakres informacji do udostępnienia"
+
+#~ msgid "In the office"
+#~ msgstr "Na miejscu"
+
+#~ msgid "<strong>ERROR</strong>: Please make the password a strong one."
+#~ msgstr ""
+#~ "<strong>Błąd</strong>: Twoje hasło jest za słabe. Hasło musi zawierać "
+#~ "małą i dużą literę, liczbę i znak specjalny. Hasło musi składać się z "
+#~ "minimum: %s znaków"
+
+#~ msgid "Revision was disabled."
+#~ msgstr "Rewizje zostały wyłączone."
+
+#, fuzzy
+#~ msgid "Register events"
+#~ msgstr "Wybierz wszystkie zdarzenia"
+
+#~ msgid "Home"
+#~ msgstr "Strona Główna"
+
+#~ msgid "About document module"
+#~ msgstr "Moduł  o dokumencie"
+
+#~ msgid "Turn off"
+#~ msgstr "Wyłącz"
+
+#~ msgid ""
+#~ "Enter the IP addresses you want to ban. Separate addresses with commas. "
+#~ "Banned IPs will not have access to the cockpit."
+#~ msgstr ""
+#~ "Wpisz adresy IP, które chcesz zbanować. Adresy oddziel przecinkami. "
+#~ "Zbanowane adresy IP nie będą miały dostępu do kokpitu."
+
+#~ msgid "Ban this IP address?"
+#~ msgstr "Zbanuj adresy IP"
+
+#~ msgid "Clear All?"
+#~ msgstr "Usunąć wszystkie?"
+
+#, fuzzy
+#~ msgid "No Comments &darr;"
+#~ msgstr "Komentarze"
+
+#, fuzzy
+#~ msgid "% Comments &darr;"
+#~ msgstr "Komentarze"
+
+#~ msgid ""
+#~ "Defaults were excluded some modules on the homepage and in the cockpit "
+#~ "edit form entries / pages."
+#~ msgstr ""
+#~ "Domyślne wyłączone zostały niektóre moduły na stronie głównej kokpitu jak "
+#~ "i w formularzu edycji wpisów / stron."
+
+#~ msgid "The boxes on your Post form screen are:"
+#~ msgstr "W formularzu edycji wpisów dostępne są następujące moduły:"
+
+#~ msgid "The boxes on your Dashboard screen are:"
+#~ msgstr "W Twoim kokpicie dostępne są następujące moduły:"
+
+#~ msgid "Hide dashbord meta box"
+#~ msgstr "Ukryj widgety w adminie"
+
+#~ msgid "Update post"
+#~ msgstr "Aktualizacja"
+
+#~ msgid "Delete post"
+#~ msgstr "Usunięcie"
+
+#~ msgid "Delete page"
+#~ msgstr "Usunięcie"
+
+#~ msgid "Insert attachment"
+#~ msgstr "Dodanie"
+
+#~ msgid "Update attachment"
+#~ msgstr "Aktualizacja"
+
+#~ msgid "Delete attachment"
+#~ msgstr "Usunięcie"
+
+#~ msgid "Update user"
+#~ msgstr "Aktualizacja"
+
+#~ msgid "Deleted rows: %d"
+#~ msgstr "Usunięto wpisów: %d"
+
+#~ msgid "1 days"
+#~ msgstr "1 dzień"
+
+#~ msgid "2 days"
+#~ msgstr "2 dni"
+
+#~ msgid "10 days"
+#~ msgstr "10 dni"
+
+#~ msgid "2 years"
+#~ msgstr "2 lata"
+
+#~ msgid "WP Register"
+#~ msgstr "Rejestr zdarzeń"
+
+#~ msgid "WP Registy"
+#~ msgstr "Rejestr zdarzeń"
