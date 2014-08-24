@@ -8,8 +8,6 @@ Author: Piotr Potrebka
 Domain Path: /languages/
 License: GPL2
 
-Copyright 2013 Piotr Potrebka - contact@potrebka.pl)
-
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as 
 published by the Free Software Foundation.
