@@ -9,6 +9,7 @@ Sort entries separately for each category
 
 == Description ==
 This plugin will allow you to sort the entries according to taxonomy.
+[youtube https://www.youtube.com/watch?v=8jvNn4V9nq8]
 
 == Upgrade Notice ==
 
