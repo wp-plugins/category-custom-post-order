@@ -3,12 +3,12 @@ Contributors: potreb
 Tags: custom post order, post order, category custom post order, taxonomy custom post order, order post by category
 Tested up to: 3.9.2
 Stable tag: 1.3.2
-Requires at least: 3.9.2
+Requires at least: 3.8
 
-Sort entries separately for each category
+Sort posts separately for each taxonomy
 
 == Description ==
-This plugin will allow you to sort the entries according to taxonomy.
+This plugin allows you to sort the posts by drag & drop interface according to taxonomy.
 [youtube https://www.youtube.com/watch?v=8jvNn4V9nq8]
 
 == Upgrade Notice ==
