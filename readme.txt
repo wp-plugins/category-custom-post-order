@@ -1,7 +1,7 @@
 === Category Custom Post Order ===
 Contributors: potreb
 Tags: custom post order, post order, category custom post order, taxonomy custom post order, order post by category
-Tested up to: 3.9.2
+Tested up to: 4.0
 Stable tag: 1.3.2
 Requires at least: 3.8
 
