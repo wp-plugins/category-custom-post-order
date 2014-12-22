@@ -19,6 +19,8 @@ Repair meta query
 Remove some empty breaklines
 
 == Changelog ==
+= 1.3.3 =
+Updates/Fixes
 = 1.3.2 =
 * Remove some empty breaklines
 
