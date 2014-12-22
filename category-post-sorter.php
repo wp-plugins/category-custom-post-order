@@ -1,11 +1,10 @@
 <?php
 /*
 Plugin Name: Category Custom Post Order
-Version: 1.3.2
+Version: 1.3.3
 Plugin URI: http://potrebka.pl/
 Description: Order post as you want.
 Author: Piotr Potrebka
-Domain Path: /languages/
 License: GPL2
 
 This program is free software; you can redistribute it and/or modify
@@ -27,13 +26,18 @@ class category_custom_post_order {
 	// all - display order link everywhere
 	public $sortlink_in = array ( 'all', 'category');
 
-	function __construct() {
-		load_plugin_textdomain( 'cps', false, 'category-post-sorter/languages' );
+	public function __construct() {
+		load_plugin_textdomain( 'cps', false, basename( dirname( __FILE__ ) ) . '/languages' );
 		add_action( 'admin_menu', array( &$this, 'admin_menu' ) );
 		add_filter( 'tag_row_actions', array( &$this, 'add_cat_order_link'), 10, 2 );
-		add_filter( 'posts_request', array( &$this, 'sort_request'), 10, 2 );
-		add_action( 'pre_get_posts', array( $this, 'pre_get_posts' ), 1 );
 		add_action( 'parse_tax_query', array( $this, 'tax_query' ), 1 );
+		add_filter( 'posts_clauses', array( $this, 'posts_clauses' ), 2, 2 );
+		add_filter( 'posts_clauses', array( $this, 'admin_posts_clauses' ), 20, 2 );
+		add_filter( 'admin_init', array( $this, 'save' ), 20, 2 );
+		
+		$this->term_id = isset($_GET['term_id']) ? $_GET['term_id'] : 0;
+		$this->taxonomy = isset($_GET['taxonomy']) ? $_GET['taxonomy'] : 0;
+		
     }
 	
     public function tax_query( $query ) {
@@ -41,55 +45,38 @@ class category_custom_post_order {
 			$query->tax_query->queries[0]['include_children'] = false;
 	}
 	
-    public function pre_get_posts( $query )
-    {
-		if( is_admin() OR !$query->is_main_query() ) return;
-		
-		$tax_slug =  isset( $query->tax_query->queries[0]['terms'][0] ) ? $query->tax_query->queries[0]['terms'][0] : 0;
-		$taxonomy =  isset( $query->tax_query->queries[0]['taxonomy'] ) ? $query->tax_query->queries[0]['taxonomy'] : 0;
-		$field = is_int( $tax_slug ) ? 'term_id' : 'slug';
-		if( $tax_slug AND $taxonomy ) {
-			$term = get_term_by( $field, $tax_slug, $taxonomy );
-			if( !isset( $term->term_id ) ) return;
-			$term_id = $term->term_id;
-			$tax_slug = $term->slug;
-		} else {
-			return;
-		}
-		
-		$active = get_option( 'post_sorter_'.$term_id );
-        if ( $active  AND ( $query->is_category() OR $query->is_tax() ) ) {
-			$query->set('meta_key', 'sort_'.$term_id);
-			$query->set('meta_type', 'NUMERIC');
-			$query->set('orderby', 'meta_value');
-			$query->set('order', 'ASC');
-			$query->set('meta_query', array(
-				'relation' => 'OR',
-				array(
-					'key' => 'sort_'.$term_id,
-					'compare' => 'NOT EXISTS'
-				)
-			));
-        }
-    }
-
-	function sort_request( $query ) {
+	public function posts_clauses( $clauses, $query ) {
 		global $wpdb;
-		if( !preg_match('/sort_[0-9]{1,3}/i', $query) OR !is_admin() ) return $query;
-		$query = preg_replace('/INNER JOIN '.$wpdb->postmeta.'/i', "LEFT JOIN {$wpdb->postmeta}", $query);
-		return $query;
+		if( is_admin() OR !$query->is_main_query() ) return $clauses;
+		$term_id = $query->query_vars['cat'];
+		$active = get_option( 'post_sorter_'.$term_id );
+        if ( $active  AND $term_id ) {
+			$clauses['join'] .= " LEFT JOIN $wpdb->postmeta sort ON ($wpdb->posts.ID = sort.post_id AND sort.meta_key = 'sort_".$term_id."')";
+			$clauses['where'] .= " AND ( sort.meta_key = 'sort_".$term_id."' OR sort.post_id IS NULL )";
+			$clauses['orderby'] = " CAST(sort.meta_value AS SIGNED) ";
+		}
+		return $clauses;
 	}
 	
-	function admin_menu() {
+	public function admin_posts_clauses( $clauses, $query ) {
+		global $wpdb;
+		if( !$this->term_id OR !$this->taxonomy ) return $clauses;
+		$clauses['join'] .= "LEFT JOIN $wpdb->postmeta sort ON ($wpdb->posts.ID = sort.post_id AND sort.meta_key = 'sort_".$this->term_id."')";
+		$clauses['where'] .= "AND ( sort.meta_key = 'sort_".$this->term_id."' OR sort.post_id IS NULL )";
+		$clauses['orderby'] = "CAST(sort.meta_value AS SIGNED), $wpdb->posts.post_date DESC";
+		return $clauses;
+	}
+	
+	public function admin_menu() {
 		$page_hook_suffix = add_submenu_page( null, __('Order posts', 'post-sorter'), __('Order posts', 'post-sorter'), 'manage_options', 'sort-page', array( $this, 'admin_page' ), 0 );
 		add_action('admin_print_scripts-' . $page_hook_suffix, array( $this, 'admin_scripts' ) );
 	}
 	
-    function admin_scripts() {
+    public function admin_scripts() {
         wp_enqueue_script( 'jquery-ui-sortable' );
     }
 
-	function add_cat_order_link($actions, $term)
+	public function add_cat_order_link($actions, $term)
 	{
 		if( !isset( $term->term_id ) OR !isset( $term->taxonomy ) ) return $actions;
 		if( ( !empty( $term->taxonomy ) AND in_array( $term->taxonomy, $this->sortlink_in) ) OR in_array( 'all', $this->sortlink_in) ) {
@@ -97,47 +84,38 @@ class category_custom_post_order {
 		}
 		return $actions;
 	}
-
-	function admin_page() {
-
-		$term_id = isset($_GET['term_id']) ? $_GET['term_id'] : 0;
-		$taxonomy = isset($_GET['taxonomy']) ? $_GET['taxonomy'] : 0;
-		$term = get_term_by('id', $term_id, $taxonomy );
-		$term_link = get_term_link( $term );
-		if( !isset( $term->name ) ) return;
-		if ( isset( $_POST['sort'] ) AND is_array($_POST['sort']) && check_admin_referer( 'save_sort', 'category_custom_post_order' ) ) {
-			
-			foreach($_POST['sort'] as $order=>$post_id) {
-				$meta_key = 'sort_' . $term_id;
+	
+	public function save() {
+		if ( isset( $_POST['sort'] ) AND is_array($_POST['sort']) && check_admin_referer( 'save_sort', 'category_custom_post_order' ) ) 
+		{
+			foreach($_POST['sort'] as $order=>$post_id) 
+			{
+				$meta_key = 'sort_' . $this->term_id;
 				if( isset( $_POST['submit'] )) {
 					add_post_meta( $post_id, $meta_key, $order, true ) || update_post_meta( $post_id, $meta_key, $order );
-					add_option( 'post_sorter_'.$term_id, 1 );
+					add_option( 'post_sorter_'.$this->term_id, 1 );
 				}
 				if( isset( $_POST['remove'] )) {
 					delete_post_meta( $post_id, $meta_key );
-					delete_option( 'post_sorter_'.$term_id );
+					delete_option( 'post_sorter_'.$this->term_id );
 				}
-				
 			}
+			$url = 'edit.php?page=sort-page&taxonomy='.$this->taxonomy.'&term_id='.$this->term_id;
+			wp_redirect( admin_url( $url ) ); 
+			exit();
 		}
-		$active = get_option( 'post_sorter_'.$term_id );
+	}
 
-		if( $active ) {
-			$args = array(
-				'tax_query' => array('relation' => 'AND', array( 'taxonomy'=> $taxonomy, 'field'=>'slug', 'terms'=>$term->slug, 'include_children' => false)),
-				'posts_per_page' => -1,
-				'meta_key' => 'sort_'.$term->term_id,
-				'meta_type' => 'NUMERIC',
-				'orderby' => 'meta_value',
-				'order' => 'ASC',
-				'meta_query' => array('relation' => 'OR', array('key' => 'sort_'.$term->term_id, 'compare' => 'NOT EXISTS'))
-			);
-		} else {
-			$args = array(
-				'tax_query' => array('relation' => 'AND',array('taxonomy'=> $taxonomy, 'field'=>'slug', 'terms'=>$term->slug, 'include_children' => false)),
-				'posts_per_page' => -1
-			);
-		}
+	public function admin_page() {
+		$term = get_term_by('id', $this->term_id, $this->taxonomy );
+		$term_link = get_term_link( $term );
+		if( !isset( $term->name ) ) return;
+		$is_sorted = get_option( 'post_sorter_'.$this->term_id );
+
+		$args = array(
+			'tax_query' => array( 'relation' => 'AND', array('taxonomy'=>$term->taxonomy, 'field'=>'term_id', 'terms'=>$term->term_id) ),
+			'posts_per_page' => -1
+		);
 		$query = new WP_Query($args);
 		?>
 			<div class="wrap"><h2><?php _e('Order posts', 'cps'); ?></h2>
@@ -157,7 +135,7 @@ class category_custom_post_order {
 					<tbody id="the-list">
 						<?php if( $query->have_posts() ): ?>
 							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-							<?php $order = get_post_meta( get_the_ID(), 'sort_' . $term_id, true); ?>
+							<?php $order = get_post_meta( get_the_ID(), 'sort_' . $term->term_id, true); ?>
 							
 							<tr>
 								<td style="border-bottom: 1px solid #EEE; cursor:move;">
@@ -170,7 +148,12 @@ class category_custom_post_order {
 						<?php endif; ?>
 					</tbody>
 				</table>
-				<p class="submit"><input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Reorder', 'cps'); ?>"  /><input type="submit" name="remove" id="submit" class="button button-secondary" value="<?php _e('Remove order', 'cps'); ?>"  /></p>
+				<p class="submit">
+					<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Reorder', 'cps'); ?>"  />
+					<?php if( $is_sorted ): ?>
+					<input type="submit" name="remove" id="submit" class="button button-secondary" value="<?php _e('Remove order', 'cps'); ?>"  />
+					<?php endif; ?>
+				</p>
 				</form>
 			</div>
 		<?php

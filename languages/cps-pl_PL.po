@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Dynamic Forms\n"
-"POT-Creation-Date: 2014-06-10 20:29+0100\n"
-"PO-Revision-Date: 2014-06-10 20:30+0100\n"
+"POT-Creation-Date: 2014-12-20 23:05+0100\n"
+"PO-Revision-Date: 2014-12-21 00:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -15,27 +15,27 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../post-sorter.php:42 ../post-sorter.php:98
+#: ../category-post-sorter.php:84 ../category-post-sorter.php:143
 msgid "Order posts"
 msgstr "Sortuj wpisy"
 
-#: ../post-sorter.php:51
+#: ../category-post-sorter.php:96
 msgid "Order"
 msgstr "Sortuj"
 
-#: ../post-sorter.php:108
+#: ../category-post-sorter.php:154
 msgid "Category:"
 msgstr "Kategorie:"
 
-#: ../post-sorter.php:122
+#: ../category-post-sorter.php:169
 msgid "No posts"
 msgstr "Brak wpisów"
 
-#: ../post-sorter.php:126
+#: ../category-post-sorter.php:173
 msgid "Reorder"
 msgstr "Posortuj"
 
-#: ../post-sorter.php:126
+#: ../category-post-sorter.php:173
 msgid "Remove order"
 msgstr "Usuń sortowanie"
 

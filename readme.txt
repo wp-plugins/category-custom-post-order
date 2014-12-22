@@ -1,9 +1,9 @@
 === Category Custom Post Order ===
 Contributors: potreb
 Tags: custom post order, post order, category custom post order, taxonomy custom post order, order post by category
-Tested up to: 4.0
-Stable tag: 1.3.2
-Requires at least: 3.8
+Tested up to: 4.1
+Stable tag: 1.3.3
+Requires at least: 4.0
 
 Sort posts separately for each taxonomy
 
@@ -12,6 +12,8 @@ This plugin allows you to sort the posts by drag & drop interface according to t
 [youtube https://www.youtube.com/watch?v=8jvNn4V9nq8]
 
 == Upgrade Notice ==
+= 1.3.3 =
+Repair meta query
 
 = 1.3.2 =
 Remove some empty breaklines
