@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Category Custom Post Order
-Version: 1.3.3
+Version: 1.3.4
 Plugin URI: http://potrebka.pl/
 Description: Order post as you want.
 Author: Piotr Potrebka
@@ -47,13 +47,16 @@ class category_custom_post_order {
 	
 	public function posts_clauses( $clauses, $query ) {
 		global $wpdb;
-		if( is_admin() OR !$query->is_main_query() ) return $clauses;
+		if( is_admin() OR !$query->is_main_query() AND !$query->is_tax() ) return $clauses;
 		$term_id = $query->query_vars['cat'];
-		$active = get_option( 'post_sorter_'.$term_id );
-        if ( $active  AND $term_id ) {
+		$term = $query->get_queried_object();
+		if( $term->term_id ) {
+			$term_id = $term->term_id;
+		}
+        if ( $term_id ) {
 			$clauses['join'] .= " LEFT JOIN $wpdb->postmeta sort ON ($wpdb->posts.ID = sort.post_id AND sort.meta_key = 'sort_".$term_id."')";
 			$clauses['where'] .= " AND ( sort.meta_key = 'sort_".$term_id."' OR sort.post_id IS NULL )";
-			$clauses['orderby'] = " CAST(sort.meta_value AS SIGNED) ";
+			$clauses['orderby'] = " CAST(sort.meta_value AS SIGNED), $wpdb->posts.post_date DESC";
 		}
 		return $clauses;
 	}
@@ -93,11 +96,9 @@ class category_custom_post_order {
 				$meta_key = 'sort_' . $this->term_id;
 				if( isset( $_POST['submit'] )) {
 					add_post_meta( $post_id, $meta_key, $order, true ) || update_post_meta( $post_id, $meta_key, $order );
-					add_option( 'post_sorter_'.$this->term_id, 1 );
 				}
 				if( isset( $_POST['remove'] )) {
 					delete_post_meta( $post_id, $meta_key );
-					delete_option( 'post_sorter_'.$this->term_id );
 				}
 			}
 			$url = 'edit.php?page=sort-page&taxonomy='.$this->taxonomy.'&term_id='.$this->term_id;
@@ -150,7 +151,7 @@ class category_custom_post_order {
 				</table>
 				<p class="submit">
 					<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Reorder', 'cps'); ?>"  />
-					<?php if( $is_sorted ): ?>
+					<?php if( $order ): ?>
 					<input type="submit" name="remove" id="submit" class="button button-secondary" value="<?php _e('Remove order', 'cps'); ?>"  />
 					<?php endif; ?>
 				</p>

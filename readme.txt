@@ -2,7 +2,7 @@
 Contributors: potreb
 Tags: custom post order, post order, category custom post order, taxonomy custom post order, order post by category
 Tested up to: 4.1
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 Requires at least: 4.0
 
 Sort posts separately for each taxonomy
@@ -18,6 +18,8 @@ This plugin allows you to sort the posts by drag & drop interface according to t
 * Remove some empty breaklines
 
 == Changelog ==
+= 1.3.4 =
+* Fix order default by date
 = 1.3.3 =
 * Updates/Fixes
 = 1.3.2 =
