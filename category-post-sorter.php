@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Category Custom Post Order
-Version: 1.3.4
+Version: 1.3.5
 Plugin URI: http://potrebka.pl/
 Description: Order post as you want.
 Author: Piotr Potrebka
@@ -37,6 +37,7 @@ class category_custom_post_order {
 		
 		$this->term_id = isset($_GET['term_id']) ? $_GET['term_id'] : 0;
 		$this->taxonomy = isset($_GET['taxonomy']) ? $_GET['taxonomy'] : 0;
+		$this->post_type = isset($_GET['post_type']) ? $_GET['post_type'] : 0;
 		
     }
 	
@@ -81,9 +82,10 @@ class category_custom_post_order {
 
 	public function add_cat_order_link($actions, $term)
 	{
+		global $post_type;
 		if( !isset( $term->term_id ) OR !isset( $term->taxonomy ) ) return $actions;
 		if( ( !empty( $term->taxonomy ) AND in_array( $term->taxonomy, $this->sortlink_in) ) OR in_array( 'all', $this->sortlink_in) ) {
-			$actions['order_link'] = '<a href="'.admin_url('edit.php?page=sort-page&taxonomy='.$term->taxonomy.'&term_id='.$term->term_id).'">' . __('Order', 'cps') . '</a>';
+			$actions['order_link'] = '<a href="'.admin_url('edit.php?page=sort-page&taxonomy='.$term->taxonomy.'&term_id='.$term->term_id.'&post_type='.$post_type).'">' . __('Order', 'cps') . '</a>';
 		}
 		return $actions;
 	}
@@ -101,7 +103,7 @@ class category_custom_post_order {
 					delete_post_meta( $post_id, $meta_key );
 				}
 			}
-			$url = 'edit.php?page=sort-page&taxonomy='.$this->taxonomy.'&term_id='.$this->term_id;
+			$url = 'edit.php?page=sort-page&taxonomy='.$this->taxonomy.'&term_id='.$this->term_id.'&post_type='.$this->post_type;
 			wp_redirect( admin_url( $url ) ); 
 			exit();
 		}
@@ -110,12 +112,13 @@ class category_custom_post_order {
 	public function admin_page() {
 		$term = get_term_by('id', $this->term_id, $this->taxonomy );
 		$term_link = get_term_link( $term );
-		if( !isset( $term->name ) ) return;
+		if( !isset( $term->name ) || !$this->post_type ) return;
 		$is_sorted = get_option( 'post_sorter_'.$this->term_id );
 
 		$args = array(
 			'tax_query' => array( 'relation' => 'AND', array('taxonomy'=>$term->taxonomy, 'field'=>'term_id', 'terms'=>$term->term_id) ),
-			'posts_per_page' => -1
+			'posts_per_page' => -1,
+			'post_type' => $this->post_type
 		);
 		$query = new WP_Query($args);
 		?>
