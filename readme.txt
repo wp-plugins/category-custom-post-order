@@ -8,7 +8,10 @@ Requires at least: 4.0
 Order posts separately for each taxonomy
 
 == Description ==
-This plugin allows you to sort the posts by drag & drop interface according to taxonomy.
+This plugin allows you to order the posts by drag & drop interface according to taxonomy.
+
+Working with custom taxonomies and post types.
+
 [youtube https://www.youtube.com/watch?v=8jvNn4V9nq8]
 
 == Upgrade Notice ==
