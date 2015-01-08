@@ -5,7 +5,7 @@ Tested up to: 4.1
 Stable tag: 1.3.6
 Requires at least: 4.0
 
-Sort posts separately for each taxonomy
+Order posts separately for each taxonomy
 
 == Description ==
 This plugin allows you to sort the posts by drag & drop interface according to taxonomy.

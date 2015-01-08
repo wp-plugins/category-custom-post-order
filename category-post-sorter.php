@@ -3,7 +3,7 @@
 Plugin Name: Category Custom Post Order
 Version: 1.3.6
 Plugin URI: http://potrebka.pl/
-Description: Order post as you want.
+Description: Order posts separately for each taxonomy
 Author: Piotr Potrebka
 License: GPL2
 
