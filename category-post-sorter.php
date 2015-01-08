@@ -51,7 +51,8 @@ class category_custom_post_order {
 		if( is_admin() OR !$query->is_main_query() AND !$query->is_tax() ) return $clauses;
 		$term_id = $query->query_vars['cat'];
 		$term = $query->get_queried_object();
-		if( $term->term_id ) {
+		
+		if( isset( $term->term_id ) AND $term->term_id > 0 ) {
 			$term_id = $term->term_id;
 		}
         if ( $term_id ) {
