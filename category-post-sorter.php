@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Category Custom Post Order
-Version: 1.3.5
+Version: 1.3.6
 Plugin URI: http://potrebka.pl/
 Description: Order post as you want.
 Author: Piotr Potrebka
@@ -64,10 +64,12 @@ class category_custom_post_order {
 	
 	public function admin_posts_clauses( $clauses, $query ) {
 		global $wpdb;
+		$revorder = ' ASC';
+		if( isset( $_POST['reverse'] ) ) $revorder = " DESC";
 		if( !$this->term_id OR !$this->taxonomy ) return $clauses;
 		$clauses['join'] .= "LEFT JOIN $wpdb->postmeta sort ON ($wpdb->posts.ID = sort.post_id AND sort.meta_key = 'sort_".$this->term_id."')";
 		$clauses['where'] .= "AND ( sort.meta_key = 'sort_".$this->term_id."' OR sort.post_id IS NULL )";
-		$clauses['orderby'] = "CAST(sort.meta_value AS SIGNED), $wpdb->posts.post_date DESC";
+		$clauses['orderby'] = "CAST(sort.meta_value AS SIGNED) {$revorder}, $wpdb->posts.post_date {$revorder}";
 		return $clauses;
 	}
 	
@@ -91,6 +93,7 @@ class category_custom_post_order {
 	}
 	
 	public function save() {
+		if( !isset( $_POST['submit'] ) AND !isset( $_POST['remove'] ) ) return;
 		if ( isset( $_POST['sort'] ) AND is_array($_POST['sort']) && check_admin_referer( 'save_sort', 'category_custom_post_order' ) ) 
 		{
 			foreach($_POST['sort'] as $order=>$post_id) 
@@ -126,37 +129,37 @@ class category_custom_post_order {
 			<form method="post">
 			<?php wp_nonce_field( 'save_sort','category_custom_post_order' ); ?>
 			<script>
-			jQuery(function() {
-				jQuery("tbody").sortable();
+			jQuery(function($) {
+				$("#the-list").sortable();
+				$(".reverse").click(function(){
+					var list = $('#the-list');
+					var listItems = list.children('li');
+					list.append(listItems.get().reverse());
+				});
 			});
 			</script>
-				<table class="wp-list-table widefat plugins">
-					<thead>
-						<tr>
-							<th scope="col"><strong><?php _e('Category:', 'cps'); ?> <a href="<?php echo $term_link; ?>" target="_blank"><?php echo $term->name; ?></a></strong></th>
-						</tr>
-					</thead>
-					<tbody id="the-list">
+					<h3>
+						<?php _e('Category:', 'cps'); ?> <a href="<?php echo $term_link; ?>" target="_blank"><?php echo $term->name; ?></a>
+					</h3>
+					<ul id="the-list" style="border: 1px solid #DDD; margin: 0;">
 						<?php if( $query->have_posts() ): ?>
 							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 							<?php $order = get_post_meta( get_the_ID(), 'sort_' . $term->term_id, true); ?>
 							
-							<tr>
-								<td style="border-bottom: 1px solid #EEE; cursor:move;">
-									<input type="hidden" name="sort[]" value="<?php the_ID(); ?>" />[<?php echo $order; ?>] <?php the_title(); ?> (<?php echo get_post_status(); ?>)
-								</td>
-							</tr>
+							<li style="margin: 0; background: #FFF; padding: 8px 8px; border-bottom: 1px solid #EEE; cursor:move;">
+								<input type="hidden" name="sort[]" value="<?php the_ID(); ?>" />[<?php echo $order; ?>] <?php the_title(); ?> (<?php echo get_post_status(); ?>)
+							</li>
 							<?php endwhile; ?>
 						<?php else: ?>
-							<tr><td><?php _e('No posts', 'cps'); ?></td></tr>
+							<li><?php _e('No posts', 'cps'); ?></li>
 						<?php endif; ?>
-					</tbody>
-				</table>
-				<p class="submit">
+					</ul>
+				<p class="submit" style="margin-top: 0;">
 					<input type="submit" name="submit" id="submit" class="button button-primary" value="<?php _e('Reorder', 'cps'); ?>"  />
 					<?php if( $order ): ?>
 					<input type="submit" name="remove" id="submit" class="button button-secondary" value="<?php _e('Remove order', 'cps'); ?>"  />
 					<?php endif; ?>
+					<input type="button" name="reverse" id="reverse" class="button button-secondary" class="reverse" value="<?php _e('Reverse', 'cps'); ?>"  />
 				</p>
 				</form>
 			</div>

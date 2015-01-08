@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Dynamic Forms\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/category-custom-post-order\n"
-"POT-Creation-Date: 2015-01-04 20:22:27+00:00\n"
-"PO-Revision-Date: 2015-01-04 21:23+0100\n"
+"POT-Creation-Date: 2015-01-08 12:20+0100\n"
+"PO-Revision-Date: 2015-01-08 12:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pl_PL\n"
@@ -16,26 +16,30 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: category-post-sorter.php:71 category-post-sorter.php:121
+#: ../category-post-sorter.php:77 ../category-post-sorter.php:128
 msgid "Order posts"
 msgstr "Sortuj wpisy"
 
-#: category-post-sorter.php:83
+#: ../category-post-sorter.php:90
 msgid "Order"
 msgstr "Sortuj"
 
-#: category-post-sorter.php:132
+#: ../category-post-sorter.php:142
 msgid "Category:"
-msgstr "Kategorie:"
+msgstr "Kategoria:"
 
-#: category-post-sorter.php:147
+#: ../category-post-sorter.php:154
 msgid "No posts"
 msgstr "Brak wpisów"
 
-#: category-post-sorter.php:152
+#: ../category-post-sorter.php:158
 msgid "Reorder"
 msgstr "Posortuj"
 
-#: category-post-sorter.php:154
+#: ../category-post-sorter.php:160
 msgid "Remove order"
 msgstr "Usuń sortowanie"
+
+#: ../category-post-sorter.php:162
+msgid "Reverse"
+msgstr "Odwróć"
