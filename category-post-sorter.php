@@ -64,12 +64,10 @@ class category_custom_post_order {
 	
 	public function admin_posts_clauses( $clauses, $query ) {
 		global $wpdb;
-		$revorder = ' ASC';
-		if( isset( $_POST['reverse'] ) ) $revorder = " DESC";
 		if( !$this->term_id OR !$this->taxonomy ) return $clauses;
 		$clauses['join'] .= "LEFT JOIN $wpdb->postmeta sort ON ($wpdb->posts.ID = sort.post_id AND sort.meta_key = 'sort_".$this->term_id."')";
 		$clauses['where'] .= "AND ( sort.meta_key = 'sort_".$this->term_id."' OR sort.post_id IS NULL )";
-		$clauses['orderby'] = "CAST(sort.meta_value AS SIGNED) {$revorder}, $wpdb->posts.post_date {$revorder}";
+		$clauses['orderby'] = "CAST(sort.meta_value AS SIGNED), $wpdb->posts.post_date ASC";
 		return $clauses;
 	}
 	
@@ -116,7 +114,6 @@ class category_custom_post_order {
 		$term = get_term_by('id', $this->term_id, $this->taxonomy );
 		$term_link = get_term_link( $term );
 		if( !isset( $term->name ) || !$this->post_type ) return;
-		$is_sorted = get_option( 'post_sorter_'.$this->term_id );
 
 		$args = array(
 			'tax_query' => array( 'relation' => 'AND', array('taxonomy'=>$term->taxonomy, 'field'=>'term_id', 'terms'=>$term->term_id) ),
@@ -159,7 +156,7 @@ class category_custom_post_order {
 					<?php if( $order ): ?>
 					<input type="submit" name="remove" id="submit" class="button button-secondary" value="<?php _e('Remove order', 'cps'); ?>"  />
 					<?php endif; ?>
-					<input type="button" name="reverse" id="reverse" class="button button-secondary" class="reverse" value="<?php _e('Reverse', 'cps'); ?>"  />
+					<input type="button" name="reverse" id="reverse" class="reverse button button-secondary" value="<?php _e('Reverse', 'cps'); ?>"  />
 				</p>
 				</form>
 			</div>
